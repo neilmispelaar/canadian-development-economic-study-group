@@ -1,0 +1,3 @@
+{{ $s := resources.Get "sass/app.scss" | toCSS }}
+
+<link rel="stylesheet" href="{{ $s.Permalink }}" />
